@@ -12,7 +12,7 @@ function Home() {
     <div className="home-container">
       Hello. You are at Home URL.
       <button type="button" id="logout-button" onClick={handleLogout}>
-        logout facebook
+        logout
       </button>
     </div>
   );
