@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FacebookLogin from "react-facebook-login";
+import { GoogleLogin } from "react-google-login";
 import Axios from "axios";
 
 class SignupForm extends Component {
@@ -23,10 +24,25 @@ class SignupForm extends Component {
   // When we will get response from facebook
 
   responseFacebook = (res) => {
-    this.setState({
-      isLoggedIn: true,
-    });
-    window.location = "/home";
+    if (res.id) {
+      this.setState({
+        isLoggedIn: true,
+      });
+      alert("Successful Login by Facebook");
+      window.location = "/home";
+    }
+  };
+
+  // For Google SDK
+  
+  responseGoogle = (response) => {
+    if (response.profileObj.googleId) {
+      this.setState({
+        isLoggedIn: true,
+      });
+      alert("Successful login by google");
+      window.location = "/home";
+    }
   };
 
   // To update the states on change in Inputs.
@@ -82,13 +98,13 @@ class SignupForm extends Component {
           </div>
           <div className="google-facebook-signup-container grid-container">
             <div className="grid-item" style={{ width: "48%" }}>
-              <button
-                type="button"
-                id="google-signup-btn"
-                style={{ width: "100%", height: "45px" }}
-              >
-                Login with Google
-              </button>
+              <GoogleLogin
+                clientId="332659994718-16pdi6mk9vs8f2f05le1kmjbdm2a9f11.apps.googleusercontent.com"
+                buttonText="Login"
+                onSuccess={this.responseGoogle}
+                onFailure={this.responseGoogle}
+                cookiePolicy={"single_host_origin"}
+              />
             </div>
             <div style={{ width: "48%" }} className="grid-item">
               <FacebookLogin

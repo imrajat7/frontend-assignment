@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo1.png";
+import logo from "../assets/logo2.png";
 
 // This Component is for Header which contains my logo
 

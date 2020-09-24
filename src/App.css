@@ -82,8 +82,9 @@ nav img {
   background-color: #db4437;
 }
 
-.google-facebook-signup-container button:hover {
+.google-facebook-signup-container .grid-item:hover {
   box-shadow: 0px 2px 4px 2px lightgray;
+  transition-duration: 300ms;
 }
 
 .seperator-container {
