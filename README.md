@@ -9,7 +9,7 @@ Frontend Assignment of Bobble AI.
 5. Axios to communicate with dummy API.
 
 ## Hosted At
-https://frontend-assignment-hho2gard1.vercel.app/
+https://frontend-assignment-seven.vercel.app/
 
 ## Steps to install Packages
 1. Go to the Directory
