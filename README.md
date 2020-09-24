@@ -11,6 +11,10 @@ Frontend Assignment of Bobble AI.
 ## Hosted At
 https://frontend-assignment-hho2gard1.vercel.app/
 
+## Steps to install Packages
+1. Go to the Directory
+2. npm install & you are good to go.
+
 ## Available Scripts
 
 In the project directory, you can run:
