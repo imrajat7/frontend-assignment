@@ -3,10 +3,11 @@ Frontend Assignment of Bobble AI.
 
 ## Tech Stack Used:
 1. React
-2. React Facebook Login
+2. react-facebook-login for Facebook SDK Login.
 3. https://reqres.in/api/ is used as Dummy API.
-4. CSS for website Responsiveness.
-5. Axios to communicate with dummy API.
+4. react-google-login for Google SDK Login.
+5. CSS for website Responsiveness.
+6. Axios to communicate with dummy API.
 
 ## Hosted At
 https://frontend-assignment-seven.vercel.app/
