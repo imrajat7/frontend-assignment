@@ -9,9 +9,16 @@ function Home() {
     window.location = "/";
   };
   return (
-    <div className="home-container">
-      Hello. You are at Home URL.
-      <button type="button" id="logout-button" onClick={handleLogout}>
+    <div className="home-container" style={{ textAlign: "center" }}>
+      Hello. You are at Home URL.<br></br>
+      If you are signed in via facebook/google than you have to logout your
+      fb/google account to logout completely.
+      <button
+        type="button"
+        id="logout-button"
+        onClick={handleLogout}
+        style={{ margin: "20px" }}
+      >
         logout
       </button>
     </div>
